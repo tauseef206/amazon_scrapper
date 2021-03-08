@@ -3,22 +3,15 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
 
 * Ruby version
-
-* System dependencies
-
-* Configuration
+Use  ruby '2.7.1'
 
 * Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+Use  Postgres
 
 * Deployment instructions
 
-* ...
+ Setup the Project
+
+ In .env file give the token for ProxyCrawl API
