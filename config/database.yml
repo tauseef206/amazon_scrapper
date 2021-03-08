@@ -7,8 +7,7 @@ test:
  <<: *default
  database: test_scrap
 production:
- <<: *default
- database: production_scrapper
+ url: <%= ENV['DATABASE_URL'] %>
 
 
 
