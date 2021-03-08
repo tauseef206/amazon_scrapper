@@ -1,7 +1,7 @@
 namespace :fetch_products do
   desc "TODO"
  task fetch_from_amazon: :environment do
-	api_client = ProxyCrawl::ScraperAPI.new(token: 'gtXvsQAFqWMRM6uYfWsyZg')
+	api_client = ProxyCrawl::ScraperAPI.new(token: ENV["TOKEN"])
  	serp_urls = Url.where(is_processed: false)
 	serp_urls.each do |serp_url|
 		puts "'''''''''''''''''"
