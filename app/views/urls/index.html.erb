@@ -2,7 +2,7 @@
 
 <h1>Urls</h1>
 
-<table>
+<table class="table-striped">
   <thead>
     <tr>
       <th>Url</th>
@@ -14,9 +14,9 @@
     <% @urls.each do |url| %>
       <tr>
         <td><%= url.url %></td>
-        <td><%= link_to 'Show', url %></td>
-        <td><%= link_to 'Edit', edit_url_path(url) %></td>
-        <td><%= link_to 'Destroy', url, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', url, class: "btn btn-primary", role: "button" %></td>
+        <td><%= link_to 'Edit', edit_url_path(url), class: "btn btn-primary", role: "button" %></td>
+        <td><%= link_to 'Destroy', url, class: "btn btn-danger", role: "button", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

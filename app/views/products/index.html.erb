@@ -38,9 +38,9 @@
         <td><%= product.coupon_info %></td>
         <td><%= product.badges_info %></td>
         <td><%= product.url %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', product,class: "btn btn-primary", role: "button" %></td>
+        <td><%= link_to 'Edit', edit_product_path(product), class: "btn btn-primary", role: "button" %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-primary", role: "button" %></td>
       </tr>
     <% end %>
   </tbody>
