@@ -1,0 +1,82 @@
+<%= form_with(model: product, local: true) do |form| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :customer_review %>
+    <%= form.text_field :customer_review %>
+  </div>
+
+  <div class="field">
+    <%= form.label :customer_review_count %>
+    <%= form.number_field :customer_review_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shipping_message %>
+    <%= form.text_field :shipping_message %>
+  </div>
+
+  <div class="field">
+    <%= form.label :asin %>
+    <%= form.text_field :asin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_prime %>
+    <%= form.check_box :is_prime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sponsored_ad %>
+    <%= form.check_box :sponsored_ad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coupon_info %>
+    <%= form.text_field :coupon_info %>
+  </div>
+
+  <div class="field">
+    <%= form.label :badges_info %>
+    <%= form.text_field :badges_info %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url_id %>
+    <%= form.text_field :url_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
