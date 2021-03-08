@@ -7,11 +7,19 @@ application up and running.
 * Ruby version
 Use  ruby '2.7.1'
 
-* Database creation
-Use  Postgres
+* Configurations:
+- Set token for ProxyCrawl API in environment variable in .env file
 
-* Deployment instructions
+- Setup database config in database.yml (postgres)
 
- Setup the Project
+* Run Application
 
- In .env file give the token for ProxyCrawl API
+ Setup the rails app using following commands:
+
+ - rvm use ruby-2.7.1 --install
+ 
+ - rails db:setup
+ 
+ - rails s
+
+
