@@ -22,4 +22,5 @@ Use  ruby '2.7.1'
  
  - rails s
 
-
+* Background Worker
+- rails fetch_products:fetch_from_amazon
